@@ -7,7 +7,7 @@ print("Welcome to my Guess my number app")
 #Getting player name
 while True:
         player_name = input("Hello! what is your name?: ")
-        if player_name is not "":
+        if player_name != "":
             print(f"Well {player_name.title()}, I am thinking of a number between 1 and 20. Ill give you five chances to take a guess.")
             break
         else:
@@ -16,7 +16,7 @@ while True:
 #Answer = random int 
 answer = random.randint(1, 20)
 
-
+#Main loop getting guess - 5  checkss 
 for i in range(5):
     player_guess = int(input("Take a guess: "))
     if player_guess == answer:
@@ -30,4 +30,5 @@ else:
     print(f"Sorry! The number I was thinking of was {answer}")
 
 
-print("Thank you for testing my little app heres a reward")
+#Thank you - msg
+print("Thank you for testing my little app here's a reward")
